@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.employeemanagement.Employee_SearchEmployeeByNameController">
+   <children>
+      <Text layoutX="73.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Management System - Employee Control">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="229.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Employee By Name" />
+      <TextField fx:id="employeeNameTextField" layoutX="73.0" layoutY="145.0" onAction="#searchEmployeeByName" prefHeight="25.0" prefWidth="455.0" promptText="Employee Name" />
+      <Text layoutX="73.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Employee Name" />
+      <Text layoutX="73.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Details" />
+      <Button fx:id="searchButton" layoutX="475.0" layoutY="145.0" mnemonicParsing="false" onAction="#searchEmployeeByName" text="Search" />
+      <Button fx:id="exitButton" layoutX="266.0" layoutY="334.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="68.0" text="Exit" />
+      <TextArea fx:id="employeeDetailsTextField" layoutX="73.0" layoutY="218.0" prefHeight="101.0" prefWidth="455.0" />
+   </children>
+</AnchorPane>
